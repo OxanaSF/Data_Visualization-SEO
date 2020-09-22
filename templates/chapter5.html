@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta content="utf-8" http-equiv="encoding">
+  <meta name="description" content="Applying D3.js to Data Visialization for SEO and Analytics class at CCSF" />
+  <title>data visualization tools D3.js</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+  <link rel="stylesheet" type="text/css" href="../static/css/chapter5.css" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175882288-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-175882288-1");
+  </script>
+
+</head>
+
+
+
+<body>
+  <nav class="navbar">
+    <form class="form-inline">
+      <button id="navbar-btn0" class="btn btn-outline-success" type="button"
+        onclick="window.location.href = 'home.html'; ">
+        Home page
+      </button>
+
+      <button id="navbar-btn1" class="btn btn-outline-success" type="button"
+        onclick="window.location.href = 'chapter4.html'; ">
+        Previous
+      </button>
+
+      <button id="navbar-btn2" class="btn btn-outline-success" type="button"
+        onclick="window.location.href = 'seo_strategies.html'; ">
+        Next
+      </button>
+    </form>
+  </nav>
+
+  <br />
+  <h1>Data Visualization with D3.js</h1>
+
+  <hr />
+<div class="intro">
+  <p>D3 stands for Data-Driven Documents. It is an open-source JavaScript data visialization library developed by
+        Mike Bostock to create custom interactive data visualizations in the web browser using SVG, HTML and CSS. <a
+            href="#"
+            onClick="window.open('https://medium.com/@Elijah_Meeks/d3-is-not-a-data-visualization-library-67ba549e8520', '_blank')"
+            >Here</a
+          > you can find the useful article about D3.js.</p></div>
+  <div class="cont">
+    <div class="column" id="description">
+      <p>On the right, you can see the bar chart I created using the d3js library. It represents crime rate of five districts in San Francisco with the highest crime rating in a descending order. Put mouse over bars to see numbers.</p>
+
+      <h2>Purpose:</h2>
+        <p>
+          This graphic is created to show the five districts in San Francisco with the hieghest crime rating in the period from 2018 to present (data is taken on September 17, 2020); and demonstrate how 
+          knowledge of d3.js couldbe applied.
+        </p>
+        <h2>Source</h2>
+        <p>
+          This image is based on data from the San Francisco Open data Police
+          Department Incident Reports: 2018 to Present you can find
+          <a
+            href="#"
+            onClick="window.open('https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783', '_blank')"
+            >here</a
+          >.
+        </p>
+        <h2>Data Visualization Tools</h2>
+        <p>
+          The aggregation of the data from a CSV file was done <a
+            href="#"
+            onClick="window.open('chapter3.html', '_blank')"
+            >Python</a
+          >. The
+          creation on the bar chart was done with d3.js, version5.15 (the latest version (6.1.1)). Full information about d3.js could be found 
+          on its oficial website.
+           <a
+            href="#"
+            onClick="window.open('https://d3js.org/', '_blank')"
+            >d3js.org</a
+          >.
+        </p>
+         
+
+
+      
+
+    </div>
+
+    <div class="column" id="chart"></div>
+  </div>
+
+  <script src="../static/js/d3.min15.js"></script>
+  <script src="../static/js/chapter5.js"></script>
+
+
+
+</body>
+
+</html>

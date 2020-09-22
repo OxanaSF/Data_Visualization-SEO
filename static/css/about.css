@@ -1,0 +1,124 @@
+body {
+  padding: 0;
+  background-color: #EEB238FF;
+  /* background-color: #FFEAA2; */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.btn.btn-outline-success {
+  margin: 5px;
+  letter-spacing: 2px;
+}
+
+.btn-outline-success:hover {
+  background-color: #552c1f;
+}
+
+.btn.btn-outline-success:active,
+.btn.btn-outline-success:focus {
+  outline-color: #552c1f;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+div.alert.alert-info {
+  text-align: center;
+  font-size: 28px;
+}
+
+p {
+  padding: 10px;
+}
+
+.btn-outline-success {
+  color: #404969;
+  border-color: #404969;
+  font-weight: lighter;
+}
+
+#navbar-btn0:hover,
+#navbar-btn1:hover,
+#navbar-btn0:active,
+#navbar-btn1:active,
+#navbar-btn0:focus, 
+#navbar-btn1:focus{
+  background-color: #552c1f;
+  border: #552c1f;
+  box-shadow: none;
+  color: red;
+  letter-spacing: 2px;
+}
+
+
+  .btn.btn-outline-success {
+    margin: 5px;
+  }
+
+  .btn-outline-success {
+    color:rgb(66, 42, 8);
+    border-color: rgb(66, 42, 8);
+    font-weight: lighter;
+  }
+
+  .btn-outline-success:hover {
+    background-color:rgb(204, 157, 64);
+  }
+
+  .btn-outline-success:active,
+  .btn-outline-success:focus
+   {
+    background-color:rgb(202, 44, 70);
+  }
+
+/* p {
+    padding: 10px;
+  }  */
+
+
+/* Main part */
+
+.content {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  color: rgb(66, 42, 8);
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  text-align: center;
+}
+
+
+#book_about_data {
+  font-style: italic;
+  color: red;
+}
+.image img {
+  width: 700px;
+  filter: opacity(.5);
+}
+
+
+@media (max-width: 768px) {
+
+  .content {
+ font-size: 14px;
+}
+
+  .image img {
+  width: 400px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+}
+
+
+h1 {
+  margin-top: 5%;
+  color: rgb(66, 42, 8);
+  font-weight: lighter;
+  font-size: 35px;
+  letter-spacing: 0.8px;
+  text-align: center;
+}

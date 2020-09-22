@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="chapter one of notes for Data Visialization for SEO and Analytics class at CCSF"
+    />
+    <title>data visualization examples</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-175882288-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-175882288-1");
+    </script>
+
+    <script src="../static/js/chapter1.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" type="text/css" href="../static/css/chapter1.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <form class="form-inline">
+        <button
+          id="navbar-btn0"
+          class="btn btn-outline-success"
+          type="button"
+          onclick="window.location.href = 'home.html'; "
+        >
+          Home page
+        </button>
+        <button
+          id="navbar-btn1"
+          class="btn btn-outline-success"
+          type="button"
+          onclick="window.location.href = 'about.html'; "
+        >
+          About
+        </button>
+        <button
+          id="navbar-btn2"
+          class="btn btn-outline-success"
+          type="button"
+          onclick="window.location.href = 'chapter2.html'; "
+        >
+          Next
+        </button>
+      </form>
+    </nav>
+
+    <br />
+    <h1>Data Visualization Examples </br>San Francisco Crime Rate</h1>
+    <hr />
+
+    <div class="content1">
+      <div class="left_col_descr">
+        <img id="myImg" src="../static/img/crime_by_district_San_Francisco_2018_up.png" alt="Crime rate by district" />
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01" />
+          <div id="caption"></div>
+        </div>
+
+        <script>
+          var modal = document.getElementById("myModal");
+          var img = document.getElementById("myImg");
+          var modalImg = document.getElementById("img01");
+          var captionText = document.getElementById("caption");
+          img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+          };
+
+          var span = document.getElementsByClassName("close")[0];
+          span.onclick = () => {
+            modal.style.display = "none";
+          };
+        </script>
+      </div>
+
+      <div class="right-col-descr">
+        <h2>Purpose:</h2>
+        <p>
+          This graphic is created to show the crime rate in San Francisco from
+          2018 to present (data is taken on September 17, 2020) and see, what
+          district is more safe or more dangerous to live.
+        </p>
+        <h2>Source</h2>
+        <p>
+          This image is based on data from the San Francisco Open data Police
+          Department Incident Reports: 2018 to Present you can find
+          <a
+            href="#"
+            onClick="window.open('https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783', '_blank')"
+            >here</a
+          >.
+        </p>
+
+        <h2>Data Visualization Tools</h2>
+        <p>
+          The aggregation of the data from a CSV file was done in
+          <a
+            href="#"
+            onClick="window.open('chapter3.html', '_blank')"
+            >Python</a
+          >. The
+          creation on the bar chart was done in Google sheets, imported .png
+          file, then modified with
+          <a
+            href="#"
+            onClick="window.open('https://www.kapwing.com/', '_blank')"
+            >www.kapwing.com</a
+          >.
+        </p>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="content2">
+      <div class="left_col_descr">
+        <img id="myImg2" src="../static/img/crime_types_San_Francisco_2018_up.png" alt="Crime statistics_San_Francisco" />
+        <!-- The Modal -->
+        <div id="myModal2" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img02" />
+          <div id="caption2"></div>
+        </div>
+        <script>
+          
+          var modal = document.getElementById("myModal2");
+          var img = document.getElementById("myImg2");
+          var modalImg = document.getElementById("img02");
+          var captionText = document.getElementById("caption2");
+          
+          img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+          };
+
+          var span = document.getElementsByClassName("close")[1];
+          span.onclick = () => {
+            modal.style.display = "none";
+          };
+        </script>
+      </div>
+
+
+      <div class="right-col-descr">
+        <h2>Purpose:</h2>
+        <p>
+          This graphic is created to show the crime statistics in San Francisco
+          from 2018 to present (data is taken on September 17, 2020) and see,
+          what crime type is leading and what crime type is more likely or less
+          likely happen in San Francisc.
+        </p>
+        <h2>Source</h2>
+        <p>
+          This image is based on data from the San Francisco Open data Police
+          Department Incident Reports: 2018 to Present you can find
+          <a
+            href="#"
+            onClick="window.open('https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783', '_blank')"
+            >here</a
+          >.
+        </p>
+        <h2>Data Visualization Tools</h2>
+        <p>
+          The aggregation of the data from a CSV file was done <a
+            href="#"
+            onClick="window.open('chapter3.html', '_blank')"
+            >Python</a
+          >. The
+          creation on the bar chart was done in Google sheets, imported .png
+          file, then modified with
+          <a
+            href="#"
+            onClick="window.open('https://www.kapwing.com/', '_blank')"
+            >www.kapwing.com</a
+          >.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
